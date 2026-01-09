@@ -3,6 +3,8 @@ import React from 'react';
 import { HeartPulse, Instagram, Facebook, Mail } from 'lucide-react';
 
 const Footer: React.FC = () => {
+  const year = new Date().getFullYear();
+
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, href: string) => {
     e.preventDefault();
     const targetId = href.replace('#', '');
@@ -100,7 +102,17 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="border-t border-slate-100 pt-10 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-slate-400">
-          <p>© 2024 VITTA Senior Care. Todos os direitos reservados.</p>
+          <div className="flex flex-col items-center md:items-start gap-2">
+            <p>© {year} VITTA Senior Care. Todos os direitos reservados.</p>
+            <a
+              href="https://tisemfronteira.com.br"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-400 hover:text-blue-600 transition-colors"
+            >
+              Site desenvolvido pela <span className="font-semibold">TI SEM FRONTEIRA</span>
+            </a>
+          </div>
           <div className="flex gap-8">
             <a href="#" className="hover:text-blue-600">Política de Privacidade</a>
             <a href="#" className="hover:text-blue-600">Termos de Uso</a>
