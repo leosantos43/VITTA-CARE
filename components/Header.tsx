@@ -36,7 +36,7 @@ const Header: React.FC = () => {
       <div className="container mx-auto px-4 md:px-8">
         <div className={`flex items-center justify-between transition-all duration-500 rounded-3xl px-4 md:px-6 py-2 ${scrolled ? 'bg-white/90 backdrop-blur-xl shadow-lg border border-white/40' : 'bg-transparent'}`}>
           <a href="#home" onClick={(e) => handleLinkClick(e, '#home')} className="flex items-center gap-2 md:gap-3 group">
-            <div className="relative h-12 w-12 md:h-16 md:w-16 overflow-hidden rounded-full border-2 border-emerald-500/20 shadow-sm">
+            <div className="relative h-16 w-16 md:h-24 md:w-24 overflow-hidden rounded-full border-2 border-emerald-500/20 shadow-sm">
               <img 
                 src={logo} 
                 alt="VITTA Senior Care" 

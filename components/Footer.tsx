@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { HeartPulse, Instagram, Facebook, Mail } from 'lucide-react';
+import { HeartPulse, Instagram, Mail } from 'lucide-react';
 
 const Footer: React.FC = () => {
   const year = new Date().getFullYear();
@@ -37,13 +37,10 @@ const Footer: React.FC = () => {
               Especialistas em cuidado humanizado domiciliar. Oferecemos segurança, profissionalismo e amor para idosos e suporte completo para suas famílias.
             </p>
             <div className="flex gap-4 mt-8">
-              <a href="#" className="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center text-slate-600 hover:bg-blue-600 hover:text-white transition-all">
+              <a href="https://www.instagram.com/vittasenior_care?igsh=MXV3YTE4Y21lbGk5NQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center text-slate-600 hover:bg-blue-600 hover:text-white transition-all">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center text-slate-600 hover:bg-blue-600 hover:text-white transition-all">
-                <Facebook size={20} />
-              </a>
-              <a href="mailto:contato@vittaseniorcare.com.br" className="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center text-slate-600 hover:bg-blue-600 hover:text-white transition-all">
+<a href="mailto:contato@vittaseniorcare.com.br" className="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center text-slate-600 hover:bg-blue-600 hover:text-white transition-all">
                 <Mail size={20} />
               </a>
             </div>
@@ -102,7 +99,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="border-t border-slate-100 pt-10 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-slate-400">
-          <div className="flex flex-col items-center md:items-start gap-2">
+          <div className="flex flex-col items-center gap-2 text-center">
             <p>© {year} VITTA Senior Care. Todos os direitos reservados.</p>
             <a
               href="https://tisemfronteira.com.br"
